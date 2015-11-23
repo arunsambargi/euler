@@ -9,6 +9,7 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 """
 
 
+
 def isMultipleOf(numb,mult):
     if numb == 0 or mult == 0:
         return False
@@ -43,8 +44,10 @@ def eulerProblem1(numb):
             continue        
         
     return total   
-            
 
-print (eulerProblem1(numb = 1000))
-        
+# Get the Natural Number Range from User
+valx = int(input("Enter Number :"))    
+
+# Compute the Sum of all Multiples of 3 and 5 in the Natural number range entered by user  
+print ('The sum of all natural numbers below %(number)d that are multiples of 3 or 5 is %(result)d' % {"number": valx ,"result":eulerProblem1(numb = valx)})   
     
