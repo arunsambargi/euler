@@ -81,6 +81,6 @@ euler8_add(irange)
 if __name__ == '__main__':
     import timeit
     print('Time for Add')
-    #print(timeit.timeit(stmt="euler8_add(%d)" % (irange), number=1, setup="from __main__ import euler8_add"))
+    print(timeit.timeit(stmt="euler8_add(%d)" % (irange), number=1, setup="from __main__ import euler8_add"))
     print('Time for Mul')
     #print(timeit.timeit(stmt="euler8_mul(%d)" % (irange), number=1, setup="from __main__ import euler8_mul"))
